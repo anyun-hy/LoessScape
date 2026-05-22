@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use LoessScape, please cite both the paper and the dataset."
+title: "LoessScape: A Continuous-Region Land-Cover Benchmark for Semantic Segmentation under Spatially Clustered Imbalance"
+type: software
+authors:
+  - given-names: Junjie
+    family-names: Wang
+    affiliation: "School of Computer Science and Technology, Xidian University"
+    email: jj_wang@stu.xidian.edu.cn
+  - given-names: Ping
+    family-names: Jiang
+    affiliation: "School of Information Engineering, Yulin University"
+  - given-names: Gang
+    family-names: Liu
+    affiliation: "School of Computer Science and Technology, Xidian University"
+    email: gliu@xidian.edu.cn
+  - given-names: Hanye
+    family-names: Liu
+    affiliation: "School of Information Engineering, Yulin University"
+  - given-names: Lihui
+    family-names: Xu
+    affiliation: "Nuclear Intelligent Security Technology (Xi'an) Co., Ltd."
+  - given-names: Sijun
+    family-names: Liu
+    affiliation: "Suide Administration and Supervision Bureau of Soil and Water Conservation of the Yellow River"
+  - given-names: Xin
+    family-names: Lei
+    affiliation: "Suide Administration and Supervision Bureau of Soil and Water Conservation of the Yellow River"
+year: 2026
+license: CC-BY-NC-SA-4.0
+keywords:
+  - semantic segmentation
+  - land cover mapping
+  - spatially clustered imbalance
+  - spatial autocorrelation
+  - domain adaptation
+  - remote sensing
+references:
+  - type: data
+    title: "LoessScape: A Multi-Scale Semantic Segmentation Dataset for Loess Plateau Land Use"
+    authors:
+      - given-names: Junjie
+        family-names: Wang
+      - given-names: Ping
+        family-names: Jiang
+      - given-names: Gang
+        family-names: Liu
+      - given-names: Hanye
+        family-names: Liu
+      - given-names: Lihui
+        family-names: Xu
+      - given-names: Sijun
+        family-names: Liu
+      - given-names: Xin
+        family-names: Lei
+    year: 2026
+    publisher:
+      name: Zenodo
+    doi: 10.5281/zenodo.XXXXXXX
