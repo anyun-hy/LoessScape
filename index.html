@@ -137,6 +137,13 @@
   .dl-banner .s{color:#cdbfa8;font-size:.92rem;margin-top:2px;}
   .dl-banner code{color:#e9d3b0;}
 
+  /* ---------- figures ---------- */
+  figure{margin:0;}
+  figure img{display:block;width:100%;border:1px solid var(--line);border-radius:14px;background:#1a1714;}
+  figcaption{color:var(--muted);font-size:.86rem;margin-top:10px;text-align:center;line-height:1.5;}
+  .fig-portrait{max-width:440px;margin:30px auto 0;}
+  .fig-wide{margin:22px 0 0;}
+
   /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem;}
   footer a{color:var(--accent-dark);}
@@ -160,6 +167,7 @@
       <a href="#overview">Overview</a>
       <a href="#scales">Multi-Scale</a>
       <a href="#classes">Classes</a>
+      <a href="#benchmark">Benchmark</a>
       <a href="#download">Download</a>
       <a href="#cite">Cite</a>
       <a href="https://github.com/anyun-hy/LoessScape">GitHub</a>
@@ -229,6 +237,12 @@
            Paradox</b> and characterizes <b>Spatial Siege</b>.</p>
       </div>
     </div>
+
+    <figure class="fig-portrait">
+      <img src="assets/mask_overlay.jpg" alt="Full land-cover ground truth of the LoessScape study area" />
+      <figcaption>The complete land-cover ground truth — a single continuous region of
+        ~1,853 km², annotated across 14 classes.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -303,9 +317,30 @@
   </div>
 </section>
 
+<section id="benchmark">
+  <div class="wrap">
+    <h2><span class="num">04</span>Benchmark Results</h2>
+    <p class="lead">LoessScape supports both hierarchical supervised segmentation and unsupervised
+      domain adaptation. The qualitative predictions below show representative models on the
+      benchmark — note how geometrically thin minority classes and class boundaries remain
+      persistently difficult.</p>
+
+    <figure class="fig-wide">
+      <img src="assets/benchmark_sl.jpg" alt="Supervised segmentation predictions across models" />
+      <figcaption>Supervised segmentation (Level-2) — input, annotation, and predictions from
+        FCN, U-Net, DeepLabV3+, PSPNet, HRNet, SegFormer and SETR.</figcaption>
+    </figure>
+    <figure class="fig-wide">
+      <img src="assets/benchmark_uda.jpg" alt="Unsupervised domain adaptation predictions" />
+      <figcaption>Unsupervised domain adaptation under spatial distribution shift across
+        representative UDA methods.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="download">
   <div class="wrap">
-    <h2><span class="num">04</span>Download &amp; Structure</h2>
+    <h2><span class="num">05</span>Download &amp; Structure</h2>
     <div class="dl-banner">
       <div>
         <div class="t">Full dataset — ~9.7&nbsp;GB, archived on Zenodo</div>
@@ -339,7 +374,7 @@ Tile name:  {scale}_{split}_{row}_{col}_{tileID}.tif</pre>
 
 <section id="cite">
   <div class="wrap">
-    <h2><span class="num">05</span>Citation</h2>
+    <h2><span class="num">06</span>Citation</h2>
     <p class="lead">If you use LoessScape in your research, please cite both the paper and the dataset.</p>
 
     <div class="citebox">
