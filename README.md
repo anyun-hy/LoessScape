@@ -128,5 +128,5 @@ This repository and the LoessScape dataset are released under the
 
 ## Contact
 
-Corresponding author: **Gang Liu** — `gliu@xidian.edu.cn`
+For questions about LoessScape, please contact the first author **Junjie Wang** — `jj_wang@stu.xidian.edu.cn`
 School of Computer Science and Technology, Xidian University, Xi'an, Shaanxi, China
