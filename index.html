@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -29,7 +29,7 @@
     --water:#3a7eb5;
     --maxw:1180px;
 
-    --serif:"Instrument Serif", "Source Serif Pro", Georgia, serif;
+    --serif:"Source Serif 4", "Source Serif Pro", "Newsreader", Georgia, serif;
     --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   }
@@ -126,16 +126,16 @@
   }
   .hero h1{
     font-family:var(--serif);
-    font-weight:400;
-    font-size:clamp(2.6rem, 5.4vw, 4.6rem);
-    line-height:.98;
-    letter-spacing:-.02em;
+    font-weight:600;
+    font-size:clamp(2.4rem, 5vw, 4.2rem);
+    line-height:1.04;
+    letter-spacing:-.022em;
     color:var(--ink);
     margin:22px 0 18px;
   }
   .hero h1 .mark{
     color:var(--accent-deep);
-    font-style:italic;
+    font-weight:600;
     position:relative;
   }
   .hero h1 .small{
@@ -233,7 +233,7 @@
   .stat:last-child{border-right:none;}
   .stat .v{
     font-family:var(--serif);
-    font-size:2.4rem;font-weight:400;line-height:1;
+    font-size:2.2rem;font-weight:600;line-height:1;
     letter-spacing:-.02em;color:var(--ink);
   }
   .stat .v .unit{font-size:.55em;color:var(--muted);font-family:var(--sans);font-weight:500;margin-left:4px;}
@@ -247,11 +247,11 @@
     letter-spacing:.1em;display:block;margin-bottom:8px;
   }
   .sec-head h2{
-    font-family:var(--serif);font-weight:400;
-    font-size:clamp(2rem, 3.6vw, 2.8rem);
-    line-height:1.05;letter-spacing:-.02em;color:var(--ink);
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(1.7rem, 3vw, 2.3rem);
+    line-height:1.15;letter-spacing:-.018em;color:var(--ink);
   }
-  .sec-head h2 em{font-style:italic;color:var(--accent-deep);}
+  .sec-head h2 em{font-style:normal;color:var(--accent-deep);font-weight:600;}
   .sec-head .lead{
     margin-left:auto;color:var(--muted);font-size:.98rem;line-height:1.6;
     max-width:440px;padding-bottom:6px;
@@ -370,7 +370,7 @@
     background:radial-gradient(circle, rgba(194,90,31,.4) 0%, rgba(194,90,31,0) 60%);
     pointer-events:none;
   }
-  .dl-banner .t{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:#fff;line-height:1.15;letter-spacing:-.01em;}
+  .dl-banner .t{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:#fff;line-height:1.2;letter-spacing:-.01em;}
   .dl-banner .s{color:#d8c69e;font-size:.92rem;margin-top:10px;font-family:var(--mono);}
   .dl-banner .s b{color:#fff;font-weight:500;}
   .dl-banner .btn-zen{
@@ -652,7 +652,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 01 / OVERVIEW</span>
-        <h2>Why a <em>continuous-region</em> benchmark?</h2>
+        <h2>Overview</h2>
       </div>
       <p class="lead">A rigorous testbed for hierarchical supervised segmentation and unsupervised domain adaptation — built where models actually break.</p>
     </div>
@@ -711,7 +711,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 02 / MULTI-SCALE PERCEPTION</span>
-        <h2>One anchor, <em>three scales</em>.</h2>
+        <h2>Multi-Scale Perception</h2>
       </div>
       <p class="lead">Every tile is output at <b>512×512 px</b>, but each scale reads a different-sized window from the source image — sharing the same upper-left anchor so tiles pair across scales.</p>
     </div>
@@ -789,7 +789,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 03 / CLASS TAXONOMY</span>
-        <h2>14 Level-2 classes, <em>7 Level-1 groups</em>.</h2>
+        <h2>Class Taxonomy</h2>
       </div>
       <p class="lead">A two-level hierarchy based on the China national standard <b>GB/T&nbsp;21010-2017</b>. Swatches are the official mask color palette. <code style="font-family:var(--mono);font-size:.84em;background:var(--bg-warm);padding:1px 6px;border-radius:4px;">NoData = 255</code> marks areas outside the study-area boundary.</p>
     </div>
@@ -879,7 +879,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 04 / DATASET CONSTRUCTION</span>
-        <h2>Splits that <em>respect the landscape</em>.</h2>
+        <h2>Dataset Construction</h2>
       </div>
       <p class="lead">A semantic-content-aware partitioning aligns class distributions across train / val / test, and a dual-safeguard framework preserves label fidelity at tile boundaries.</p>
     </div>
@@ -917,7 +917,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 05 / BENCHMARK RESULTS</span>
-        <h2>Two tasks, <em>one continuous region</em>.</h2>
+        <h2>Benchmark Results</h2>
       </div>
       <p class="lead">Qualitative predictions from representative models. Geometrically thin minority classes and class boundaries remain persistently difficult — the hallmark of Spatially Clustered Imbalance.</p>
     </div>
@@ -959,7 +959,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 06 / DOWNLOAD &amp; STRUCTURE</span>
-        <h2>Get the dataset.</h2>
+        <h2>Download &amp; Structure</h2>
       </div>
       <p class="lead">Archived on Zenodo with a permanent DOI. Released under CC&nbsp;BY-NC-SA&nbsp;4.0.</p>
     </div>
@@ -1009,7 +1009,7 @@
     <div class="sec-head">
       <div>
         <span class="sec-num">— 07 / CITATION</span>
-        <h2>Citing <em>LoessScape</em>.</h2>
+        <h2>Citation</h2>
       </div>
       <p class="lead">If you use LoessScape in your research, please cite both the paper and the dataset.</p>
     </div>
