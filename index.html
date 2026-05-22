@@ -167,6 +167,7 @@
       <a href="#overview">Overview</a>
       <a href="#scales">Multi-Scale</a>
       <a href="#classes">Classes</a>
+      <a href="#construction">Construction</a>
       <a href="#benchmark">Benchmark</a>
       <a href="#download">Download</a>
       <a href="#cite">Cite</a>
@@ -314,12 +315,33 @@
     </div>
     <p class="lead" style="margin-top:18px;">Level-1 categories: Cropland · Orchard · Forest ·
       Grassland · Built-up · Transportation · Water.</p>
+
+    <figure class="fig-wide">
+      <img src="assets/class_distribution.jpg" alt="Per-class pixel coverage and spatial autocorrelation" />
+      <figcaption>Per-class pixel coverage (bars) and spatial autocorrelation — Moran's I (dots).
+        The extreme long-tailed distribution combined with high autocorrelation is what defines
+        <b>Spatially Clustered Imbalance</b>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="construction">
+  <div class="wrap">
+    <h2><span class="num">04</span>Dataset Construction</h2>
+    <p class="lead">Train / val / test splits are produced by a semantic-content-aware stratified
+      partitioning strategy that aligns class distributions across splits, while a dual-safeguard
+      framework preserves label fidelity at tile boundaries.</p>
+    <figure class="fig-wide">
+      <img src="assets/methodology.jpg" alt="LoessScape dataset construction methodology" />
+      <figcaption>(a) Conventional geography-aware partitioning vs. (b) the semantic-content-aware
+        partitioning used in LoessScape; (c) the dual-safeguard framework for edge fidelity.</figcaption>
+    </figure>
   </div>
 </section>
 
 <section id="benchmark">
   <div class="wrap">
-    <h2><span class="num">04</span>Benchmark Results</h2>
+    <h2><span class="num">05</span>Benchmark Results</h2>
     <p class="lead">LoessScape supports both hierarchical supervised segmentation and unsupervised
       domain adaptation. The qualitative predictions below show representative models on the
       benchmark — note how geometrically thin minority classes and class boundaries remain
@@ -340,7 +362,7 @@
 
 <section id="download">
   <div class="wrap">
-    <h2><span class="num">05</span>Download &amp; Structure</h2>
+    <h2><span class="num">06</span>Download &amp; Structure</h2>
     <div class="dl-banner">
       <div>
         <div class="t">Full dataset — ~9.7&nbsp;GB, archived on Zenodo</div>
@@ -374,7 +396,7 @@ Tile name:  {scale}_{split}_{row}_{col}_{tileID}.tif</pre>
 
 <section id="cite">
   <div class="wrap">
-    <h2><span class="num">06</span>Citation</h2>
+    <h2><span class="num">07</span>Citation</h2>
     <p class="lead">If you use LoessScape in your research, please cite both the paper and the dataset.</p>
 
     <div class="citebox">
