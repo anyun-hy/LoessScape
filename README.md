@@ -3,7 +3,7 @@
 **A Continuous-Region Land-Cover Benchmark for Semantic Segmentation under Spatially Clustered Imbalance**
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Dataset on Zenodo](https://img.shields.io/badge/Dataset-Zenodo-blue.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![Dataset on Zenodo](https://img.shields.io/badge/Dataset-Zenodo-blue.svg)](https://doi.org/10.5281/zenodo.20340667)
 [![Paper (preprint)](https://img.shields.io/badge/Paper-preprint-green.svg)](paper/LoessScape_preprint.pdf)
 
 LoessScape is a pixel-level semantic segmentation benchmark built entirely under a **continuous-region survey paradigm**. Instead of curating geographically isolated tiles, it preserves the complete spatial organization of a representative Loess Plateau region (~1,853 km²) through a semantic-content-aware stratified partitioning strategy. This design explicitly exposes the challenge of **Spatially Clustered Imbalance**, in which geometrically thin minority classes are persistently embedded within strongly autocorrelated dominant terrains.
@@ -23,7 +23,7 @@ LoessScape is a pixel-level semantic segmentation benchmark built entirely under
 
 The full dataset (~9.7 GB) is archived on **Zenodo**:
 
-> **DOI:** [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX) *(updated on release)*
+> **DOI:** [10.5281/zenodo.20340667](https://doi.org/10.5281/zenodo.20340667)
 
 | Property | Value |
 |:---|:---|
@@ -112,7 +112,7 @@ If you use LoessScape in your research, please cite both the paper and the datas
   author    = {Wang, Junjie and Jiang, Ping and Liu, Gang and Liu, Hanye and Xu, Lihui and Liu, Sijun and Lei, Xin},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.20340667},
   note      = {Licensed under CC BY-NC-SA 4.0}
 }
 ```
